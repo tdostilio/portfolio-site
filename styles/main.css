@@ -1,0 +1,53 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 4em;
+    border: 1px solid red;
+    justify-content: space-between;
+    position: fixed;
+    opacity: 0.9;
+    background: white;
+    
+}
+
+.menu {
+    display: flex;
+    width: 30%;
+    min-width: 200px;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-align: left;
+    border: 1px solid blue;
+}
+.hamburger-menu {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.banner-image {
+    width: 100%;
+}
+@media (max-width: 450px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+      display: unset;
+  }
+}
